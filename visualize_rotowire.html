@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display JSON Data</title>
+  <style>
+    .data-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+  
+      .table-container {
+        flex: 1 1 30%;
+        margin-right: 2px;
+      }
+  
+      .sentences-container {
+        flex: 1 1 60%;
+      }
+      
+    table {
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+      
+      th, td {
+        border: 1px solid black;
+        padding: 4px;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+        text-align: left;
+      }
+      
+      ul {
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+      
+      #table_text {
+        font-family: monospace;
+        white-space: pre-wrap;
+        word-break: break-all;
+        font-size: 12px;
+        line-height: 1.2;
+      }
+      
+  </style>
+  <script>
+    function displayData() {
+      // Retrieve the input value
+      var input = document.getElementById("doc_id_input").value.trim();
+
+      // Retrieve the JSON data
+      fetch("data/rotowire/visualization.json")
+        .then(response => response.json())
+        .then(data => {
+          // Retrieve the data for the given document ID
+          var docData = data[input];
+
+          // Check if the document ID exists in the JSON data
+          if (docData) {
+            // Display the CSV ID and sentences
+            document.getElementById("generation").innerHTML = docData.pred;
+            document.getElementById("reference").innerHTML = docData.gold;
+
+
+            // Create the table HTML
+            var tableHtml1 = "<table><thead><tr>";
+            for (var i = 0; i < docData.table1[0].length; i++) {
+              tableHtml1 += "<th>" + docData.table1[0][i] + "</th>";
+            }
+            tableHtml1 += "</tr></thead><tbody>";
+            for (var i = 1; i < docData.table1.length; i++) {
+              tableHtml1 += "<tr>";
+              for (var j = 0; j < docData.table1[i].length; j++) {
+                tableHtml1 += "<td>" + docData.table1[i][j] + "</td>";
+              }
+              tableHtml1 += "</tr>";
+            }
+            tableHtml1 += "</tbody></table>";
+
+            // Display the table HTML
+            
+            document.getElementById("table1").innerHTML = tableHtml1;
+            
+            var tableHtml2 = "<table><thead><tr>";
+            for (var i = 0; i < docData.table2[0].length; i++) {
+              tableHtml2 += "<th>" + docData.table2[0][i] + "</th>";
+            }
+            tableHtml2 += "</tr></thead><tbody>";
+            for (var i = 1; i < docData.table2.length; i++) {
+              tableHtml2 += "<tr>";
+              for (var j = 0; j < docData.table2[i].length; j++) {
+                tableHtml2 += "<td>" + docData.table2[i][j] + "</td>";
+              }
+              tableHtml2 += "</tr>";
+            }
+            tableHtml2 += "</tbody></table>";
+
+            // Display the table HTML
+
+            document.getElementById("table2").innerHTML = tableHtml2;
+
+            // Display the table text
+            document.getElementById("copy_str").innerHTML = docData.copy_str;
+
+            // Show the copy button
+            document.getElementById("copy_button").style.display = "block";
+          } else {
+            // Clear all the fields if the document ID doesn't exist in the JSON data
+            document.getElementById("reference").innerHTML = "";
+            document.getElementById("generation").innerHTML = "";
+            document.getElementById("table1").innerHTML = "";
+            document.getElementById("table2").innerHTML = "";
+            document.getElementById("copy_str").innerHTML = "";
+            document.getElementById("copy_button").style.display = "none";
+          }
+        });
+    }
+
+    function copyText() {
+        var tableText = document.getElementById("copy_str").innerHTML;
+        tableText = tableText.replace(/<br>/g, "\n"); // Replace all <br> tags with newlines
+        navigator.clipboard.writeText(tableText)
+      }
+      
+      
+  </script>
+</head>
+<body>
+    <form onsubmit="return false;">
+      <input type="text" id="doc_id_input" onkeydown="if (event.keyCode == 13) { displayData(); }">
+      <button onclick="displayData()">View Data</button>
+    </form>
+    <div class="data-container">
+      <div class="table-container">
+        <div id="table1"></div>
+        <div id="table2"></div>
+        <p id="copy_str" style="display: none;"></p>
+        <button id="copy_button" onclick="copyText()">Copy Table Text</button>
+      </div>
+      <div class="sentences-container">
+        <h2>Reference Text:</h2>
+        <p id="reference"></p>
+        <h2>Generated Text:</h2>
+        <p id="generation"></p>
+      </div>
+    </div>
+  </body>
+  
+</html>

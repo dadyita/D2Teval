@@ -1,0 +1,377 @@
+{
+    "2206": {
+        "reference": "in 2019, shagun sharma played in the roles as pernia in laal ishq, vikram betaal ki rahasya gatha as rukmani/kashi and shaadi ke siyape as dua.",
+        "prediction": "in 2019, shagun sharma was seen in the tv shows laal ishq, vikram betaal ki rahasya gatha, and shaadi ke siyape.",
+        "score": {
+            "rouge1": 0.7083333333333334,
+            "rouge2": 0.5652173913043479,
+            "rougeL": 0.7083333333333334,
+            "bleu": 0.4271642160201614,
+            "meteor": 0.5694117647058823,
+            "bertscore_p": 0.9623849391937256,
+            "bertscore_r": 0.9223921298980713,
+            "bertscore_f": 0.9419642090797424,
+            "bleurt": 0.17053045332431793
+        }
+    },
+    "15555": {
+        "reference": "in the 1975 north vietnamese legislative election, the vietnamese fatherland front won all 424 seats.",
+        "prediction": "the result was a victory for the vietnamese fatherland front, which won 424 of the 424 seats.",
+        "score": {
+            "rouge1": 0.5,
+            "rouge2": 0.26666666666666666,
+            "rougeL": 0.5,
+            "bleu": 0.20038908500140973,
+            "meteor": 0.3766111707841031,
+            "bertscore_p": 0.9285320043563843,
+            "bertscore_r": 0.925740122795105,
+            "bertscore_f": 0.9271339774131775,
+            "bleurt": 0.023644138127565384
+        }
+    },
+    "561": {
+        "reference": "during 2009, christian cooke played the lead role of luke rutherford in demons & lord dorian gaudain in trinity.",
+        "prediction": "in 2009, christian cooke played as luke rutherford-van helsing in demons and as lord dorian gaudain in trinity.",
+        "score": {
+            "rouge1": 0.7027027027027027,
+            "rouge2": 0.5142857142857143,
+            "rougeL": 0.7027027027027027,
+            "bleu": 0.4309809162747321,
+            "meteor": 0.6231628453850676,
+            "bertscore_p": 0.9449422955513,
+            "bertscore_r": 0.9688113927841187,
+            "bertscore_f": 0.956727921962738,
+            "bleurt": 0.21053162217140198
+        }
+    },
+    "9835": {
+        "reference": "the speed sfx's lowest bpm is 175 on tracks #5\u201316, and the highest bpm is 195 on #20 in the speed series.",
+        "prediction": "the track 007 has the lowest bpm and the track the power of love has the highest bpm.",
+        "score": {
+            "rouge1": 0.380952380952381,
+            "rouge2": 0.19999999999999998,
+            "rougeL": 0.3333333333333333,
+            "bleu": 0.0,
+            "meteor": 0.18518518518518517,
+            "bertscore_p": 0.8892403841018677,
+            "bertscore_r": 0.860082745552063,
+            "bertscore_f": 0.8744186162948608,
+            "bleurt": -0.9837402701377869
+        }
+    },
+    "21418": {
+        "reference": "kazunari okayama joined j1 league club yokohama marinos (later yokohama f. marinos) in 1997.",
+        "prediction": "kazunari okayama started his career with yokohama marinos in the j1 league in 1997.",
+        "score": {
+            "rouge1": 0.5714285714285714,
+            "rouge2": 0.38461538461538464,
+            "rougeL": 0.42857142857142855,
+            "bleu": 0.0,
+            "meteor": 0.5016741071428571,
+            "bertscore_p": 0.9530799388885498,
+            "bertscore_r": 0.9427998661994934,
+            "bertscore_f": 0.9479120373725891,
+            "bleurt": 0.4988974928855896
+        }
+    },
+    "8032": {
+        "reference": "the u-438 sank three ships, totalling 12,045 gross register tons (grt) and damaged one ship totalling 5,496 grt.",
+        "prediction": "the german submarine u-438 sank three ships with a total of 6,008 grt and damaged one ship with 5,496 grt.",
+        "score": {
+            "rouge1": 0.6363636363636365,
+            "rouge2": 0.47619047619047616,
+            "rougeL": 0.6363636363636365,
+            "bleu": 0.27813701926231843,
+            "meteor": 0.5760148941967125,
+            "bertscore_p": 0.9279837012290955,
+            "bertscore_r": 0.9131097197532654,
+            "bertscore_f": 0.9204866290092468,
+            "bleurt": 0.49124234914779663
+        }
+    },
+    "431": {
+        "reference": "the 32.03 seconds average of five solves is set by yu da-hyun (\uc720\ub2e4\ud604) at cwr winter 2018.",
+        "prediction": "feliks zemdegs set the fastest average with 36.65s.",
+        "score": {
+            "rouge1": 0.2222222222222222,
+            "rouge2": 0.0,
+            "rougeL": 0.14814814814814814,
+            "bleu": 0.0,
+            "meteor": 0.09316770186335403,
+            "bertscore_p": 0.8371527791023254,
+            "bertscore_r": 0.8000414371490479,
+            "bertscore_f": 0.8181765079498291,
+            "bleurt": -1.1014741659164429
+        }
+    },
+    "20853": {
+        "reference": "faye appeared for hull city in the 2012\u201313 and 2013\u201314 seasons.",
+        "prediction": "abdoulaye faye appeared for hull city in the 2012\u201313 championship and the 2013\u201314 premier league.",
+        "score": {
+            "rouge1": 0.8000000000000002,
+            "rouge2": 0.6428571428571429,
+            "rougeL": 0.8000000000000002,
+            "bleu": 0.479548279896769,
+            "meteor": 0.8223684210526314,
+            "bertscore_p": 0.8999665379524231,
+            "bertscore_r": 0.9439613819122314,
+            "bertscore_f": 0.9214391708374023,
+            "bleurt": 0.26258254051208496
+        }
+    },
+    "767": {
+        "reference": "sixteen different isotopes have been reported with atomic masses from 253 to 270 (with the exceptions of 264 and 269).",
+        "prediction": "rutherfordium has been reported as having a half-life of 15 minutes and a decay mode of \u03b1.",
+        "score": {
+            "rouge1": 0.2162162162162162,
+            "rouge2": 0.05714285714285714,
+            "rougeL": 0.2162162162162162,
+            "bleu": 0.0,
+            "meteor": 0.21644106034968977,
+            "bertscore_p": 0.8527766466140747,
+            "bertscore_r": 0.8268016576766968,
+            "bertscore_f": 0.8395883440971375,
+            "bleurt": -0.7034724950790405
+        }
+    },
+    "1812": {
+        "reference": "walter hagen was the leader at 149, two strokes ahead of jim barnes, george duncan and j.h. taylor.",
+        "prediction": "walter hagen won the 1922 open championship with a score of 149 (\u22121), one stroke ahead of jim barnes and george duncan.",
+        "score": {
+            "rouge1": 0.5365853658536586,
+            "rouge2": 0.25641025641025644,
+            "rougeL": 0.4878048780487805,
+            "bleu": 0.13796620851017116,
+            "meteor": 0.44719538378958673,
+            "bertscore_p": 0.9299890995025635,
+            "bertscore_r": 0.9405144453048706,
+            "bertscore_f": 0.9352221488952637,
+            "bleurt": -0.012113630771636963
+        }
+    },
+    "15064": {
+        "reference": "in 2011 yu was noted for palace, which earned him a best screenwriter award at the 16th asian television awards.",
+        "prediction": "in 2011, yu won the grand ceremony of movie & tv new forces for most popular screenwriter and the 16th asian television awards for best screenwriter.",
+        "score": {
+            "rouge1": 0.48888888888888893,
+            "rouge2": 0.32558139534883723,
+            "rougeL": 0.4444444444444445,
+            "bleu": 0.17567205239427922,
+            "meteor": 0.4312765786728717,
+            "bertscore_p": 0.9018269777297974,
+            "bertscore_r": 0.9231951832771301,
+            "bertscore_f": 0.9123859405517578,
+            "bleurt": -0.1858067363500595
+        }
+    },
+    "1834": {
+        "reference": "as an inline speed skater, huang won three gold medals at the 2009 world games in chinese taipei: 300 m time trial, 500 m sprint, and 1000 m sprint.",
+        "prediction": "huang yu-ting won gold in the women's 300 m time trial and silver in the 500 m sprint, and won a bronze in the 1000 m sprint at the 2009 world games.",
+        "score": {
+            "rouge1": 0.6349206349206349,
+            "rouge2": 0.3934426229508197,
+            "rougeL": 0.47619047619047616,
+            "bleu": 0.32792045239602874,
+            "meteor": 0.5499722474816066,
+            "bertscore_p": 0.9084891080856323,
+            "bertscore_r": 0.8997901678085327,
+            "bertscore_f": 0.9041187167167664,
+            "bleurt": 0.0395846851170063
+        }
+    },
+    "21624": {
+        "reference": "howe led the yale football team as head coach for one year (1912) and compiled a 7\u20131\u20131 record.",
+        "prediction": "art howe served as the head football coach at yale from 1912 to 1918, compiling a record of 7\u20131\u20131.",
+        "score": {
+            "rouge1": 0.6341463414634146,
+            "rouge2": 0.10256410256410256,
+            "rougeL": 0.4390243902439024,
+            "bleu": 0.0,
+            "meteor": 0.32262465043312194,
+            "bertscore_p": 0.9477607607841492,
+            "bertscore_r": 0.9437143802642822,
+            "bertscore_f": 0.9457331895828247,
+            "bleurt": 0.3296245336532593
+        }
+    },
+    "16730": {
+        "reference": "in 1996, marisol nichols appeared in my guys, due south, and beverly hills, 90210.",
+        "prediction": "in 1996, marisol nichols appeared in my guys, due south, and beverly hills, 90210.",
+        "score": {
+            "rouge1": 1.0,
+            "rouge2": 1.0,
+            "rougeL": 1.0,
+            "bleu": 1.0,
+            "meteor": 0.9998177842565598,
+            "bertscore_p": 1.000000238418579,
+            "bertscore_r": 1.000000238418579,
+            "bertscore_f": 1.000000238418579,
+            "bleurt": 0.9799184203147888
+        }
+    },
+    "10064": {
+        "reference": "denmark's lotte friis recorded a time of 8:24.50 and germany's sarah k\u00f6hler recorded a time of 8:27.75 at the olympics.",
+        "prediction": "katie ledecky and leah smith both finished in 8:20.95, while sarah k\u00f6hler from germany finished with 8:27.75.",
+        "score": {
+            "rouge1": 0.36734693877551017,
+            "rouge2": 0.1702127659574468,
+            "rougeL": 0.2857142857142857,
+            "bleu": 0.0,
+            "meteor": 0.1297236322617033,
+            "bertscore_p": 0.8933991193771362,
+            "bertscore_r": 0.8958271145820618,
+            "bertscore_f": 0.8946114778518677,
+            "bleurt": -0.2876732349395752
+        }
+    },
+    "21159": {
+        "reference": "the unionist candidate had a victory by 15,206 votes to sinn f\u00e9in's 861 votes.",
+        "prediction": "the unionist candidate robert mccalmont received 15,206 votes (94.6%) to daniel dumigan's 861 votes (5.4%).",
+        "score": {
+            "rouge1": 0.5555555555555555,
+            "rouge2": 0.35294117647058826,
+            "rougeL": 0.5555555555555555,
+            "bleu": 0.0,
+            "meteor": 0.4059921841076856,
+            "bertscore_p": 0.872246265411377,
+            "bertscore_r": 0.9206450581550598,
+            "bertscore_f": 0.8957924842834473,
+            "bleurt": -0.30767062306404114
+        }
+    },
+    "12617": {
+        "reference": "in the 2014 commonwealth games, gemili finished the 100m in second position with a time of 10.10 seconds.",
+        "prediction": "adam gemili finished 2nd at the 2014 commonwealth games in a time of 10.10 seconds.",
+        "score": {
+            "rouge1": 0.742857142857143,
+            "rouge2": 0.5454545454545454,
+            "rougeL": 0.6285714285714286,
+            "bleu": 0.39215250898576165,
+            "meteor": 0.635593220338983,
+            "bertscore_p": 0.9580521583557129,
+            "bertscore_r": 0.9375303983688354,
+            "bertscore_f": 0.9476801753044128,
+            "bleurt": 0.22842901945114136
+        }
+    },
+    "21070": {
+        "reference": "\"i've got a feeling\" was released, through atlantic, in the united states on october 7, 1997 and in australia in 1998.",
+        "prediction": "\"i've got a feeling\" was released as a promotional cd single and a cd single in the united states on october 7, 1997 by atlantic.",
+        "score": {
+            "rouge1": 0.7083333333333333,
+            "rouge2": 0.5652173913043478,
+            "rougeL": 0.6249999999999999,
+            "bleu": 0.5237705041286053,
+            "meteor": 0.6284569902727446,
+            "bertscore_p": 0.9403558373451233,
+            "bertscore_r": 0.945584774017334,
+            "bertscore_f": 0.9429630637168884,
+            "bleurt": 0.08896172046661377
+        }
+    },
+    "13839": {
+        "reference": "tom felton made his debut in the role of peagreen clock in the borrowers in 1997 and portrayed louis t. leonowens in anna and the king in 1999.",
+        "prediction": "tom felton's first roles were peagreen clock in the film the borrowers (1997) and louis t. leonowens in anna and the king (1999).",
+        "score": {
+            "rouge1": 0.7307692307692307,
+            "rouge2": 0.52,
+            "rougeL": 0.6923076923076924,
+            "bleu": 0.38988721178581476,
+            "meteor": 0.5798540965207631,
+            "bertscore_p": 0.9490892887115479,
+            "bertscore_r": 0.9484546184539795,
+            "bertscore_f": 0.9487718343734741,
+            "bleurt": 0.5271902680397034
+        }
+    },
+    "20930": {
+        "reference": "labour defeated the british national party by 192 votes.",
+        "prediction": "in the 2007 solihull metropolitan borough council election, labour won with a majority of 192 votes over the national british party.",
+        "score": {
+            "rouge1": 0.4666666666666666,
+            "rouge2": 0.07142857142857144,
+            "rougeL": 0.26666666666666666,
+            "bleu": 0.0,
+            "meteor": 0.24509803921568626,
+            "bertscore_p": 0.8639415502548218,
+            "bertscore_r": 0.928309440612793,
+            "bertscore_f": 0.894969642162323,
+            "bleurt": -0.1910080760717392
+        }
+    },
+    "12516": {
+        "reference": "democrat roy romer defeated republican nominee, john andrews with 61.89% of the vote.",
+        "prediction": "in the 1990 colorado gubernatorial election, romer defeated republican john andrews with 61.89% of the vote.",
+        "score": {
+            "rouge1": 0.7096774193548386,
+            "rouge2": 0.6206896551724138,
+            "rougeL": 0.7096774193548386,
+            "bleu": 0.5089175114935748,
+            "meteor": 0.7488721804511279,
+            "bertscore_p": 0.9245431423187256,
+            "bertscore_r": 0.9440528154373169,
+            "bertscore_f": 0.9341961741447449,
+            "bleurt": -0.11222314834594727
+        }
+    },
+    "17544": {
+        "reference": "hal sutton had the lowest individual score of 12-under-par 276, six strokes better than any other player.",
+        "prediction": "hal sutton had the lowest individual score at 276 (\u221212), one stroke ahead of chen tze-chung (282) and jim holtgrieve (285).",
+        "score": {
+            "rouge1": 0.4878048780487805,
+            "rouge2": 0.30769230769230765,
+            "rougeL": 0.3902439024390244,
+            "bleu": 0.21936644511443132,
+            "meteor": 0.5076628352490422,
+            "bertscore_p": 0.8551661372184753,
+            "bertscore_r": 0.9165210723876953,
+            "bertscore_f": 0.8847811818122864,
+            "bleurt": -0.43550950288772583
+        }
+    },
+    "21045": {
+        "reference": "in the 86th united states congress, richard m. simpson (r) served until january 7, 1960 and was succeeded by douglas h. elliott (r) on april 26, 1960, who served until june 19, 1960.",
+        "prediction": "richard m. simpson (r) resigned on january 7, 1960, and douglas h. elliott was elected as his successor.",
+        "score": {
+            "rouge1": 0.5098039215686274,
+            "rouge2": 0.32653061224489793,
+            "rougeL": 0.43137254901960786,
+            "bleu": 0.2139292271701403,
+            "meteor": 0.36460974922513373,
+            "bertscore_p": 0.9374052286148071,
+            "bertscore_r": 0.8992915153503418,
+            "bertscore_f": 0.9179529547691345,
+            "bleurt": -0.05340981110930443
+        }
+    },
+    "10083": {
+        "reference": "peabody appeared as the sun in an off-broadway production of tarot (1970), which she followed with the role as minnie in annie get your gun (1973-1974).",
+        "prediction": "sandra peabody played the role of minnie in annie get your gun and the sun in tarot.",
+        "score": {
+            "rouge1": 0.6222222222222222,
+            "rouge2": 0.37209302325581395,
+            "rougeL": 0.39999999999999997,
+            "bleu": 0.16266548775332965,
+            "meteor": 0.4000565784200476,
+            "bertscore_p": 0.9082885980606079,
+            "bertscore_r": 0.8778136968612671,
+            "bertscore_f": 0.8927911520004272,
+            "bleurt": -0.3829572796821594
+        }
+    },
+    "1789": {
+        "reference": "in the texas's 21st congressional district election, lamar smith defeated lainey melnick with 68.9 percent of the vote, with a majority of 96929 votes.",
+        "prediction": "republican lamar smith defeated democrat lainey melnick and libertarian james arthur strohm in texas's 21st congressional district election.",
+        "score": {
+            "rouge1": 0.5333333333333333,
+            "rouge2": 0.37209302325581395,
+            "rougeL": 0.3111111111111111,
+            "bleu": 0.1913518790322833,
+            "meteor": 0.41367521367521376,
+            "bertscore_p": 0.9081721305847168,
+            "bertscore_r": 0.8867174386978149,
+            "bertscore_f": 0.897316575050354,
+            "bleurt": -0.4879947304725647
+        }
+    }
+}

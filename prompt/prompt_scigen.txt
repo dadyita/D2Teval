@@ -1,0 +1,57 @@
+Imagine you are a human annotator now. You will evaluate the quality of one summary based on a given tables and explain why the score is given in the every single dimension in detail. Please follow these steps:
+1. Carefully read the table and the table caption, be aware of the information they contain and analyze their key points and important aspects.
+2. Read the proposed summary carefully and understand its content.
+3. Rate the summary on four dimensions: relevance, consistency, fluency, and coherence. You should rate on a scale from 1 (worst) to 5 (best). Note that scores are integers . Please remember to rate each dimension separately and strictly by definition.
+
+Definitions are as follows:
+Relevance: The rating measures how well the summary captures the key points of the table. Consider whether all and only the important aspects are contained in the summary without any unnecessary repetitons. Note that 1 point indicates that the summary only include some unrelayed and insignificant content without any important information from the source table. You could penalize summaries which contained redundancies and excess information by giving a relative low score in this dimension.
+
+Consistency: The rating measures whether the facts in the text are consistent with the facts in the original table. Consider whether the summary does reproduce all facts accurately and does not make up untrue information. Note that 1 point indicates the summary doesn't have any fact entailed by the source table. You could penalize summaries that contained hallucinated facts by giving a relative low score in this dimension.
+
+Fluency: This rating measures the quality of individual sentences, whether they are well-written and grammatically correct. Consider the quality of individual sentences. If you find formatting problems, capitalization errors or obviously ungrammatical sentences (e.g., fragments, missing components) that make the text difficult to read, you could penalize the summary by giving a relative low score in this dimension.
+
+Coherence: The rating measures the quality of all sentences collectively, to fit together and sound natural. Consider the quality of the summary as a whole. Note that 1 point indicates should just be a heap of related information. You could penalize the summary that is not a coherent body of information from the source table by giving a relative low score in this dimension.
+
+Here is a example you can follow.
+Table Title:
+Evaluating Layers of Representation in Neural Machine Translation on Part-of-Speech and Semantic Tagging Tasks
+
+Table Content:
+[EMPTY] | Ar | Es | Fr | Ru | Zh | En
+POS | 88.7 | 90.0 | 89.6 | 88.6 | 87.4 | 85.2
+SEM | 85.3 | 86.1 | 85.8 | 85.2 | 85.0 | 80.7
+
+Table Caption:
+Table 4: SEM and POS tagging accuracy using features extracted from the 4th NMT encoding layer, trained with different target languages on a smaller parallel corpus (200K sentences).
+
+Summary:
+we trained systems using a smaller data size (200K sentences), The results are shown in Table 4. we observe a variance in classifier accuracy of 1-2%, based on target language, This is true for both POS and SEM tagging.
+
+Evaluation Form (score and explain the four scores based on four dimensions)：
+-Relevance:  4
+-Explanation: The text captures most of the key points of the table, such as the smaller data size and the variance in classifier accuracy. However, it omits  some general information that the accuracies of POS tagging based on target language are higher than those of SEM tagging.
+-Consistency: 3
+-Explanation: The text mentions that there is a variance in classifier accuracy of 1-2%, based on target language. However, the highest variance is actually about 5% for both POS and SEM tagging.
+-Fluency:4
+-Explanation:  There are some errors about the use of punctuations, such as incorrect use of the comma.
+-Accuracy: 5
+-Explanation: The text is well-structured and well-organized, providing a coherent and logical representation of the information in the table.
+
+Now rate the following example:
+Table Content:
+
+
+Table Caption:
+
+
+Summary:
+
+Evaluation Form (score and explain the four scores based on four dimensions)：
+-Relevance: 
+-Explanation:
+-Consistency:
+-Explanation: 
+-Fluency:
+-Explanation: 
+-Coherence: 
+-Explanation:

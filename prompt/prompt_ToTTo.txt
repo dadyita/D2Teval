@@ -1,0 +1,41 @@
+Imagine you are a human annotator now. You will evaluate the quality of one summary based on a given tables and explain why the score is given in the every single dimension in detail. Please follow these steps:
+1. Carefully read the tables and its highlighted cells, be aware of the information they contain and analyze their key points and important aspects.
+2. Read the proposed summary carefully and understand its content.
+3. Rate text on a scale from 1(worst) to 3(best) by its consistency, and a scale from 1(worst) to 5(best) by its fluency and relevance according to the definitions following. Note that scores are integers. Please remember to rate each dimension separately and strictly by definition.
+
+Definitions are as follows:
+Relevance: The rating measures how well the summary captures the key points of the table's hightlighted cells. Consider whether all and only the important aspects of highlighted cells are contained in the summary without any unnecessary repetitons. Note that 1 point indicates that the summary only include some unrelayed and insignificant content without any important information from the emphasized parts of the source table. You could penalize the summary which contained redundancies and excess information by giving a relative low score in this dimension.
+
+Consistency: The rating measures whether the facts in the text are consistent with the facts in the emphasized cells and the original table. Consider whether the summary does reproduce all facts accurately and does not make up untrue information. Note that 1 point indicates the summary doesn't have any fact entailed by the source table and hightlighted cells. You could penalize the summary that contained hallucinated facts by giving a relative low score in this dimension.
+
+Fluency: This rating measures the quality of individual sentences, whether they are well-written and grammatically correct. Consider the quality of individual sentences. If you find formatting problems, incorrect plural forms or obviously ungrammatical sentences (e.g., fragments, missing sentence components) that make the text difficult to read, you could penalize the summary by giving a relative low score in this dimension.
+
+Here is an example you can follow.
+<page_title> Asian Beach Games </page_title> <section_title> List of Asian Beach Games </section_title> <cell> 2016 <col_header> Year </col_header> </cell><cell> Da Nang <col_header> Host City </col_header> </cell><cell> Vietnam <col_header> Host Nation </col_header> </cell><cell> 24 September <col_header> Start Date </col_header> </cell><cell> 3 October <col_header> End Date </col_header> </cell><cell> 2020 <col_header> Year </col_header> </cell><cell> Sanya <col_header> Host City </col_header> </cell><cell> China <col_header> Host Nation </col_header> </cell><table>         </table>
+
+Summary:
+the first asian beach games were held in seoul, south korea in 2011.
+
+Evaluation Form (score and explain the three scores based on three dimensions)：
+-Relevance:  1
+-Explanation: The summary does not capture any key points from the table regarding the 2016 Asian Beach Games held in Da Nang, Vietnam and the 2020 Asian Beach Games scheduled to be held in Sanya, China. Instead, it mentions the 2011 games in Seoul which is not mentioned in the highlighted cells.
+-Consistency: 1
+-Explanation: The summary does not follow the facts provided in the highlighted cells and the original table; it inaccurately states that the first Asian Beach Games were held in Seoul in 2011. The emphasized part only contains information about the 2016 and 2020 Asian Beach Games.
+-Fluency: 5
+-Explanation:  The sentences in the summary are well-structured and grammatically correct.  All the sentences flow very smoothly, reflecting good language control.
+
+
+Now rate the following example:
+Table Content:
+
+Summary:
+
+Evaluation Form (score and explain the three scores based on three dimensions)：
+-Relevance: 
+-Explanation:
+-Consistency:
+-Explanation: 
+-Fluency:
+-Explanation: 
+
+

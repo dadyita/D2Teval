@@ -1,0 +1,52 @@
+Imagine you are a human annotator now. You will evaluate the quality of one summary based on a given table with a query and explain why the score is given in the every single dimension in detail. Please follow these steps:
+1. Carefully read the table and the question, be aware of the information they contains and analyze their key points and important aspects.
+2. Read the proposed summary carefully and understand its content.
+3. Rate text on a scale from 1(worst) to 3(best) by its consistency, and a scale from 1(worst) to 5(best) by its fluency and relevance according to the definitions following. Note that scores are integers. Please remember to rate each dimension separately and strictly by definition.
+
+Definitions are as follows:
+Relevance: The rating measures how well the summary captures the key points of the table that can be the answer of the query. Consider whether all and only the important aspects that are related to the query are contained in the summary. Note that 1 point indicates that the summary only include some unrelayed and insignificant content without any important information from the source table for the query. You could penalize the summary which contained redundancies and excess information by giving a relative low score in this dimension.
+
+Consistency: The rating measures whether the facts in the text are consistent with the facts in the original table. Consider whether the summary does reproduce all facts accurately and does not make up untrue information. Note that 1 point indicates the summary doesn't have any fact entailed by the source table. You could penalize the summary that contained hallucinated facts by giving a  relative low score in this dimension.
+
+Fluency: This rating measures the quality of individual sentences, whether they are well-written and grammatically correct. Consider the quality of individual sentences. If you find formatting problems, incorrect plural forms or obviously ungrammatical sentences (e.g., fragments, missing sentence components) that make the text difficult to read, you could penalize the summary by giving a relative low score in this dimension.
+
+Here is a example you can follow.
+Title: German submarine U-438 - Summary of raiding history
+
+Table Content:
+Date | Name | Nationality | Tonnage (GRT) | Fate
+10 August 1942 | Condylis | Greece | 4,439 | Sunk
+10 August 1942 | Oregon | United Kingdom | 6,008 | Sunk
+25 August 1942 | Trolla | Norway | 1,598 | Sunk
+2 November 1942 | Hartington | United Kingdom | 5,496 | Damaged
+
+Summary:
+the german submarine u-438 sank three ships with a total of 6,008 grt and damaged one ship with 5,496 grt.
+
+Evaluation Form (score and explain the three scores based on three dimensions)：
+-Relevance:  5
+-Explanation: The summary accurately addresses the question about the overall damage caused by the German submarine U-438, mentioning the number of ships sunk and damaged and their respective tonnages.
+-Consistency: 2
+-Explanation: The summary is not consistent with the facts in the table. It mentions that the submarine sank three ships with a total of 6,008 GRT, while the table shows three ships sunk with a total of 12,045 GRT (4,439 + 6,008 + 1,598). The summary also states that one ship was damaged with 5,496 GRT, which is correct.
+-Fluency: 5
+-Explanation:  The sentence of the summary is well-structured and grammatically correct, which is easy to understand.
+
+Now rate the following example:
+Table Title:
+
+
+Table Content:
+
+
+Question:
+
+
+Summary:
+
+Evaluation Form (score and explain the three scores based on three dimensions)：
+-Relevance: 
+-Explanation:
+-Consistency:
+-Explanation: 
+-Fluency:
+-Explanation: 

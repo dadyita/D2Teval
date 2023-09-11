@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display JSON Data</title>
+  <style>
+    .data-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+  
+      .table-container {
+        flex: 1 1 30%;
+        margin-right: 2px;
+      }
+  
+      .sentences-container {
+        flex: 1 1 30%;
+      }
+      
+      table { border-collapse: collapse; }
+      th, td {
+        word-wrap: break-word;
+        max-width: 100%;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        text-align: left;
+      }
+      tr:hover {background: #f4f4f4;}
+      tr:hover .highlighted {background: repeating-linear-gradient(
+              45deg,
+              #ffff99,
+              #ffff99 10px,
+              #f4f4f4 10px,
+              #f4f4f4 20px
+            );}
+      .highlighted { background-color: #ffff99; }
+      
+      ul {
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+      
+      #table_text {
+        font-family: monospace;
+        white-space: pre-wrap;
+        word-break: break-all;
+        font-size: 12px;
+        line-height: 1.2;
+      }
+      
+  </style>
+  <script>
+    function displayData() {
+      // Retrieve the input value
+      var input = document.getElementById("doc_id_input").value.trim();
+
+      // Retrieve the JSON data
+      fetch("data/totto/visualization.json")
+        .then(response => response.json())
+        .then(data => {
+          // Retrieve the data for the given document ID
+          var docData = data[input];
+
+          // Check if the document ID exists in the JSON data
+          if (docData) {
+            // Display the CSV ID and sentences
+            document.getElementById("sentences").innerHTML = docData.text;
+
+            document.getElementById("table").innerHTML = docData.html_str;
+
+            // Display the table text
+            document.getElementById("table_text").innerHTML = docData.table_text;
+
+            // Show the copy button
+            document.getElementById("copy_button").style.display = "block";
+          } else {
+            // Clear all the fields if the document ID doesn't exist in the JSON data
+            document.getElementById("sentences").innerHTML = "";
+            document.getElementById("table").innerHTML = "";
+            document.getElementById("table_text").innerHTML = "";
+            document.getElementById("copy_button").style.display = "none";
+          }
+        });
+    }
+
+    function copyText() {
+        var tableText = document.getElementById("table_text").innerHTML;
+        tableText = tableText.replace(/<br>/g, "\n"); // Replace all <br> tags with newlines
+        navigator.clipboard.writeText(tableText)
+      }
+      
+      
+  </script>
+</head>
+<body>
+    <form onsubmit="return false;">
+      <input type="text" id="doc_id_input" onkeydown="if (event.keyCode == 13) { displayData(); }">
+      <button onclick="displayData()">View Data</button>
+    </form>
+        <div id="table"></div>
+        <p id="table_text" style="display: none;"></p>
+        <button id="copy_button" onclick="copyText()">Copy Table Text</button>
+
+        <h2>Generated Text:</h2>
+        <p id="sentences"></p>
+
+  </body>
+  
+</html>
